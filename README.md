@@ -1,14 +1,17 @@
 # Restful webservice
 
 It provides some user management operations:
-
 ## HTTP Methods
 
-### POST
+#### GET
+```
+/getAllUser
+```
+
+#### POST
 ```
 /addUser
 /updateUser
-/getAllUser
 /deleteUser
 ```
 
@@ -22,6 +25,7 @@ hibernate-jpa-2.1-api-1.0.0.Final
 jackson-core-2.8.10
 MySQL 5.7.20.0
 mysql-connector-java-5.1.44
+Mockito
 ```
 
 ## Other features
@@ -29,7 +33,6 @@ mysql-connector-java-5.1.44
 ```
 Hexagonal architecture
 Custom and centralized handler Exceptions
-Mockito
 JPA (Hibernate: by default every time the webservice is deployed the model is rewriten to the database)
 Some tests implemented to verify (Controller, DTOAssembler, ContextApplication)
 ```
